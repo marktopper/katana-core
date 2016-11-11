@@ -71,17 +71,6 @@ class BlogPostHandler extends BaseHandler
     }
 
     /**
-     * Check if file is inside the blog directory.
-     *
-     * @param $pathName
-     * @return bool
-     */
-    protected function isInsideBlogDirectory($pathName)
-    {
-        return str_is('*/_blog/*/*', $pathName);
-    }
-
-    /**
      * Generate blog post slug.
      *
      * @param string $fileBaseName
