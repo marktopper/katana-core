@@ -77,7 +77,7 @@ class BlogPostHandler extends BaseHandler
      *
      * @return string
      */
-    private function getBlogPostSlug($fileBaseName)
+    protected function getBlogPostSlug($fileBaseName)
     {
         preg_match('/^(\d{4}-\d{2}-\d{2})-(.*)/', $fileBaseName, $matches);
 
